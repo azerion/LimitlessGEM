@@ -1,18 +1,17 @@
-var LimitGEM = require('./lib/limitless'),
-    RGBW = require('./lib/commands/rgbw');
+var limitless = require('./lib/limitless').LimitlessLED,
+    net = require('net');
 
-var client = new LimitGEM.LimitlessLED('192.168.1.105', '8899');
+exports.RGB = require('./lib/commands/rgb');
+exports.RGBW = require('./lib/commands/rgbw');
+exports.WHITE = require('./lib/commands/white');
 
-var cmd = process.argv[2];
+exports.createSocket = function (opts, type, callback) {
+    var params = {
+        host: (opts.host || '10.10.10.100'),
+        port: (opts.port || 8899),
+        type: (type || 'udp'),
+        callback: callback
+    };
 
-if (cmd == 'on') {
-    client.send(RGBW.ZONE_1_ON);
-    client.send(RGBW.ZONE_1_ON);
-    client.send(RGBW.ZONE_1_ON);
-    client.send(RGBW.ZONE_1_ON);
-} else {
-    client.send(RGBW.ZONE_1_OFF);
-    client.send(RGBW.ZONE_1_OFF);
-    client.send(RGBW.ZONE_1_OFF);
-    client.send(RGBW.ZONE_1_OFF);
+    return new limitless(params);
 }
