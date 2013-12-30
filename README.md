@@ -15,7 +15,7 @@ Or you can include it in your package.json to use it in your own application
 
 ## TODO
 
- - [ ] Expand command list with all available LimitlessLED products (RGW, W, RGB+W)
- - [ ] Add support for TCP
- - [x] Add support for UDP
- - [ ] Configure server/port
+- [ ] Expand command list with all available LimitlessLED products (RGW, W, RGB+W)
+- [ ] Add support for TCP
+- [x] Add support for UDP
+- [ ] Configure server/port
