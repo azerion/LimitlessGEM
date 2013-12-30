@@ -7,7 +7,7 @@ NodeJS control for LimitlessLED (MiLight, EasyBulb, ) wifi controller 3.0
 
 Installling this is as easy as:
 ```bash
-npm install LimitlessGEM
+npm install limitless-gem
 ```
 Or you can include it in your package.json to use it in your own application
 
