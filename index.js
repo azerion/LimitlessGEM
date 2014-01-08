@@ -1,5 +1,4 @@
-var limitless = require('./lib/limitless').LimitlessLED,
-    net = require('net');
+var limitless = require('./lib/limitless').LimitlessLED;
 
 exports.RGB = require('./lib/commands/rgb');
 exports.RGBW = require('./lib/commands/rgbw');
