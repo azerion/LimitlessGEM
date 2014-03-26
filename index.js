@@ -13,4 +13,4 @@ exports.createSocket = function (opts, type, callback) {
     };
 
     return new limitless(params);
-}
+};
