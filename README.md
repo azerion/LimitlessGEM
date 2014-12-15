@@ -1,7 +1,7 @@
 LimitlessLED
 ============
 
-NodeJS control for LimitlessLED (MiLight, EasyBulb, ) wifi controller 3.0
+NodeJS control for LimitlessLED (MiLight, EasyBulb, ) wifi controller 4.0
 
 ## Install
 
