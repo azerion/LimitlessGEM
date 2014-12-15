@@ -1,6 +1,6 @@
 {
     "name": "limitless-gem",
-    "version": "0.2.1",
+    "version": "0.3.0",
     "author": "Gembly BV",
     "description": "Simple NodeJS HTML5 LimitlessLED Lightbulb controller",
     "keywords": [
@@ -31,7 +31,7 @@
         "log4js": "0.x.x"
     },
     "engines": {
-        "node": "0.10.24"
+        "node": "0.10.33"
     },
     "main": "./index.js"
 }
